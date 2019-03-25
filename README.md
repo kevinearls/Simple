@@ -1,5 +1,2 @@
-
 Simple java example, updated
-
-
 
