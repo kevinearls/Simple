@@ -17,6 +17,8 @@ pipeline {
         }
         stage ('archive results') {
             steps {
+                sh 'pwd'
+                sh 'ls -alF'
                 step([$class: 'JUnitResultArchiver', testResults: '**/target/*-reports/*.xml'])
             }
         }
