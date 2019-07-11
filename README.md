@@ -1,4 +1,2 @@
 Simple java example, updated
 
-
-
