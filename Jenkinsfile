@@ -12,7 +12,8 @@ pipeline {
         }
         stage ('build') {
             steps {
-                sh 'mvn --show-version --batch-mode --fail-at-end -Dsurefire.rerunFailingTestsCount=2 clean install'
+                //sh 'mvn --show-version --batch-mode --fail-at-end -Dsurefire.rerunFailingTestsCount=2 clean install'
+                sh "mvn --show-version -Dmaven.test.failure.ignore=true clean package"
             }
         }
         stage ('archive results') {
