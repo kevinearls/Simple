@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class SimpleTest {
     Random random = new Random();
 
-    @Disabled
+    //@Disabled
     @Test
     public void simpleTest() throws Exception {
         int selection = random.nextInt(5) + 1;
