@@ -5,8 +5,3 @@ Simple java example, updated
 
 
 
-
-
-
-
-
